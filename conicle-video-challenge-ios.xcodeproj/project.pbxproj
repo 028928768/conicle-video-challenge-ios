@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */; };
+		2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */; };
+		2BAEA4D42DFECD6800EF088A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D32DFECD6800EF088A /* ViewController.swift */; };
+		2BAEA4D72DFECD6800EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D62DFECD6800EF088A /* Base */; };
+		2BAEA4D92DFECD6A00EF088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */; };
+		2BAEA4DC2DFECD6A00EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4DB2DFECD6A00EF088A /* Base */; };
+		2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */; };
+		2BAEA4F12DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */; };
+		2BAEA4F32DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BAEA4E32DFECD6A00EF088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAEA4C42DFECD6800EF088A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAEA4CB2DFECD6800EF088A;
+			remoteInfo = "conicle-video-challenge-ios";
+		};
+		2BAEA4ED2DFECD6A00EF088A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BAEA4C42DFECD6800EF088A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2BAEA4CB2DFECD6800EF088A;
+			remoteInfo = "conicle-video-challenge-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "conicle-video-challenge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2BAEA4D32DFECD6800EF088A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BAEA4D62DFECD6800EF088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2BAEA4DB2DFECD6A00EF088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2BAEA4DD2DFECD6A00EF088A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BAEA4E22DFECD6A00EF088A /* conicle-video-challenge-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosTests.swift; sourceTree = "<group>"; };
+		2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITests.swift; sourceTree = "<group>"; };
+		2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BAEA4C92DFECD6800EF088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4DF2DFECD6A00EF088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4E92DFECD6A00EF088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BAEA4C32DFECD6800EF088A = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4CE2DFECD6800EF088A /* conicle-video-challenge-ios */,
+				2BAEA4E52DFECD6A00EF088A /* conicle-video-challenge-iosTests */,
+				2BAEA4EF2DFECD6A00EF088A /* conicle-video-challenge-iosUITests */,
+				2BAEA4CD2DFECD6800EF088A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2BAEA4CD2DFECD6800EF088A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */,
+				2BAEA4E22DFECD6A00EF088A /* conicle-video-challenge-iosTests.xctest */,
+				2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2BAEA4CE2DFECD6800EF088A /* conicle-video-challenge-ios */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */,
+				2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */,
+				2BAEA4D32DFECD6800EF088A /* ViewController.swift */,
+				2BAEA4D52DFECD6800EF088A /* Main.storyboard */,
+				2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */,
+				2BAEA4DA2DFECD6A00EF088A /* LaunchScreen.storyboard */,
+				2BAEA4DD2DFECD6A00EF088A /* Info.plist */,
+			);
+			path = "conicle-video-challenge-ios";
+			sourceTree = "<group>";
+		};
+		2BAEA4E52DFECD6A00EF088A /* conicle-video-challenge-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */,
+			);
+			path = "conicle-video-challenge-iosTests";
+			sourceTree = "<group>";
+		};
+		2BAEA4EF2DFECD6A00EF088A /* conicle-video-challenge-iosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */,
+				2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */,
+			);
+			path = "conicle-video-challenge-iosUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2BAEA4CB2DFECD6800EF088A /* conicle-video-challenge-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BAEA4F62DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-ios" */;
+			buildPhases = (
+				2BAEA4C82DFECD6800EF088A /* Sources */,
+				2BAEA4C92DFECD6800EF088A /* Frameworks */,
+				2BAEA4CA2DFECD6800EF088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "conicle-video-challenge-ios";
+			productName = "conicle-video-challenge-ios";
+			productReference = 2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2BAEA4E12DFECD6A00EF088A /* conicle-video-challenge-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BAEA4F92DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-iosTests" */;
+			buildPhases = (
+				2BAEA4DE2DFECD6A00EF088A /* Sources */,
+				2BAEA4DF2DFECD6A00EF088A /* Frameworks */,
+				2BAEA4E02DFECD6A00EF088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BAEA4E42DFECD6A00EF088A /* PBXTargetDependency */,
+			);
+			name = "conicle-video-challenge-iosTests";
+			productName = "conicle-video-challenge-iosTests";
+			productReference = 2BAEA4E22DFECD6A00EF088A /* conicle-video-challenge-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2BAEA4EB2DFECD6A00EF088A /* conicle-video-challenge-iosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2BAEA4FC2DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-iosUITests" */;
+			buildPhases = (
+				2BAEA4E82DFECD6A00EF088A /* Sources */,
+				2BAEA4E92DFECD6A00EF088A /* Frameworks */,
+				2BAEA4EA2DFECD6A00EF088A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2BAEA4EE2DFECD6A00EF088A /* PBXTargetDependency */,
+			);
+			name = "conicle-video-challenge-iosUITests";
+			productName = "conicle-video-challenge-iosUITests";
+			productReference = 2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BAEA4C42DFECD6800EF088A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2BAEA4CB2DFECD6800EF088A = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2BAEA4E12DFECD6A00EF088A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2BAEA4CB2DFECD6800EF088A;
+					};
+					2BAEA4EB2DFECD6A00EF088A = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 2BAEA4CB2DFECD6800EF088A;
+					};
+				};
+			};
+			buildConfigurationList = 2BAEA4C72DFECD6800EF088A /* Build configuration list for PBXProject "conicle-video-challenge-ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2BAEA4C32DFECD6800EF088A;
+			productRefGroup = 2BAEA4CD2DFECD6800EF088A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2BAEA4CB2DFECD6800EF088A /* conicle-video-challenge-ios */,
+				2BAEA4E12DFECD6A00EF088A /* conicle-video-challenge-iosTests */,
+				2BAEA4EB2DFECD6A00EF088A /* conicle-video-challenge-iosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2BAEA4CA2DFECD6800EF088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAEA4D92DFECD6A00EF088A /* Assets.xcassets in Resources */,
+				2BAEA4DC2DFECD6A00EF088A /* Base in Resources */,
+				2BAEA4D72DFECD6800EF088A /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4E02DFECD6A00EF088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4EA2DFECD6A00EF088A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2BAEA4C82DFECD6800EF088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAEA4D42DFECD6800EF088A /* ViewController.swift in Sources */,
+				2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */,
+				2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4DE2DFECD6A00EF088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2BAEA4E82DFECD6A00EF088A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BAEA4F32DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift in Sources */,
+				2BAEA4F12DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2BAEA4E42DFECD6A00EF088A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BAEA4CB2DFECD6800EF088A /* conicle-video-challenge-ios */;
+			targetProxy = 2BAEA4E32DFECD6A00EF088A /* PBXContainerItemProxy */;
+		};
+		2BAEA4EE2DFECD6A00EF088A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2BAEA4CB2DFECD6800EF088A /* conicle-video-challenge-ios */;
+			targetProxy = 2BAEA4ED2DFECD6A00EF088A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2BAEA4D52DFECD6800EF088A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BAEA4D62DFECD6800EF088A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2BAEA4DA2DFECD6A00EF088A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BAEA4DB2DFECD6A00EF088A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2BAEA4F42DFECD6A00EF088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2BAEA4F52DFECD6A00EF088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2BAEA4F72DFECD6A00EF088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "conicle-video-challenge-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2BAEA4F82DFECD6A00EF088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "conicle-video-challenge-ios/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2BAEA4FA2DFECD6A00EF088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/conicle-video-challenge-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/conicle-video-challenge-ios";
+			};
+			name = Debug;
+		};
+		2BAEA4FB2DFECD6A00EF088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/conicle-video-challenge-ios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/conicle-video-challenge-ios";
+			};
+			name = Release;
+		};
+		2BAEA4FD2DFECD6A00EF088A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "conicle-video-challenge-ios";
+			};
+			name = Debug;
+		};
+		2BAEA4FE2DFECD6A00EF088A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8A8VNC6KC9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "simon.siwell.uk.conicle-video-challenge-iosUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "conicle-video-challenge-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BAEA4C72DFECD6800EF088A /* Build configuration list for PBXProject "conicle-video-challenge-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAEA4F42DFECD6A00EF088A /* Debug */,
+				2BAEA4F52DFECD6A00EF088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BAEA4F62DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAEA4F72DFECD6A00EF088A /* Debug */,
+				2BAEA4F82DFECD6A00EF088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BAEA4F92DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAEA4FA2DFECD6A00EF088A /* Debug */,
+				2BAEA4FB2DFECD6A00EF088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2BAEA4FC2DFECD6A00EF088A /* Build configuration list for PBXNativeTarget "conicle-video-challenge-iosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2BAEA4FD2DFECD6A00EF088A /* Debug */,
+				2BAEA4FE2DFECD6A00EF088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BAEA4C42DFECD6800EF088A /* Project object */;
+}
