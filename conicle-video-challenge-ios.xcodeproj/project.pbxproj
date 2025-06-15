@@ -16,11 +16,11 @@
 		2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */; };
 		2BAEA4F12DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */; };
 		2BAEA4F32DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */; };
-		2BAEA5072DFED21D00EF088A /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */; };
+		2BAEA5072DFED21D00EF088A /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5062DFED21D00EF088A /* VideoPlayerViewController.swift */; };
 		2BAEA50B2DFED31E00EF088A /* HomeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50A2DFED31E00EF088A /* HomeOption.swift */; };
 		2BAEA50D2DFED33B00EF088A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50C2DFED33B00EF088A /* HomeViewModel.swift */; };
 		2BAEA50F2DFEDAE300EF088A /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50E2DFEDAE300EF088A /* Media.swift */; };
-		2BAEA5112DFEDB0800EF088A /* AVPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */; };
+		2BAEA5112DFEDB0800EF088A /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */; };
 		2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */; };
 		2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -56,11 +56,11 @@
 		2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITests.swift; sourceTree = "<group>"; };
 		2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
+		2BAEA5062DFED21D00EF088A /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		2BAEA50A2DFED31E00EF088A /* HomeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOption.swift; sourceTree = "<group>"; };
 		2BAEA50C2DFED33B00EF088A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		2BAEA50E2DFEDAE300EF088A /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
-		2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewModel.swift; sourceTree = "<group>"; };
+		2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewController.swift; sourceTree = "<group>"; };
 		2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -214,8 +214,8 @@
 		2BAEA5192DFEE40000EF088A /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */,
-				2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */,
+				2BAEA5062DFED21D00EF088A /* VideoPlayerViewController.swift */,
+				2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */,
 			);
 			path = VideoPlayer;
 			sourceTree = "<group>";
@@ -354,10 +354,10 @@
 				2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */,
 				2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */,
 				2BAEA50D2DFED33B00EF088A /* HomeViewModel.swift in Sources */,
-				2BAEA5112DFEDB0800EF088A /* AVPlayerViewModel.swift in Sources */,
+				2BAEA5112DFEDB0800EF088A /* VideoPlayerViewModel.swift in Sources */,
 				2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */,
 				2BAEA50B2DFED31E00EF088A /* HomeOption.swift in Sources */,
-				2BAEA5072DFED21D00EF088A /* AVPlayerViewController.swift in Sources */,
+				2BAEA5072DFED21D00EF088A /* VideoPlayerViewController.swift in Sources */,
 				2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */,
 				2BAEA50F2DFEDAE300EF088A /* Media.swift in Sources */,
 				2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */,

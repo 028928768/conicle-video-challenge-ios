@@ -39,6 +39,12 @@ extension VideoPlaylistViewController: UITableViewDataSource, UITableViewDelegat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // do something
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let media = viewModel.playlist[indexPath.row]
+        let viewModel = VideoPlayerViewModel(media: media)
+        let playerVC = VideoPlayerViewController()
+        playerVC.viewModel = viewModel
+        navigationController?.pushViewController(playerVC, animated: true)
     }
 }
