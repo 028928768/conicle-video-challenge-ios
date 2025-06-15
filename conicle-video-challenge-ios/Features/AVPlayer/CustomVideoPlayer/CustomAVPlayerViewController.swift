@@ -12,6 +12,8 @@ import AVKit
 final class CustomAVPlayerViewController: UIViewController {
     private var playerLayer: AVPlayerLayer?
     var viewModel: CustomAVPlayerViewModel?
+    private var pipController: AVPictureInPictureController?
+
     
     @IBOutlet weak var videoContainerView: UIView!
     @IBOutlet weak var controlsContainerView: UIView!
@@ -29,10 +31,16 @@ final class CustomAVPlayerViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupPlayer()
+        setupAudioSession()
         setupBindings()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(videoTapped))
         videoContainerView.addGestureRecognizer(tapGesture)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        playerLayer?.frame = videoContainerView.bounds
     }
     
     private func setupUI() {
@@ -40,6 +48,29 @@ final class CustomAVPlayerViewController: UIViewController {
         controlsContainerView.alpha = 0
         controlsContainerView.layer.cornerRadius = 10
         controlsContainerView.clipsToBounds = true
+        controlsContainerView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
+        
+        currentTimeLabel.text = "00:00"
+        durationLabel.text = "--:--"
+        slider.value = 0
+        pipButton.setImage(UIImage(systemName: "pip.enter"), for: .normal)
+        pipButton.tintColor = .white
+        
+        let configPip = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular)
+        let pipImage = UIImage(systemName: "pip.enter", withConfiguration: configPip)
+        pipButton.setImage(pipImage, for: .normal)
+        pipButton.setTitle("", for: .normal)
+
+        
+        let configPlay = UIImage.SymbolConfiguration(pointSize: 28, weight: .medium)
+        let playImage = UIImage(systemName: "play.fill", withConfiguration: configPlay)
+        playPauseButton.setImage(playImage, for: .normal)
+        playPauseButton.setTitle("", for: .normal)
+        playPauseButton.imageView?.contentMode = .scaleAspectFit
+        playPauseButton.tintColor = .white
+
+
+
     }
     
     private func setupPlayer() {
@@ -56,18 +87,37 @@ final class CustomAVPlayerViewController: UIViewController {
 
     private func setupBindings() {
         viewModel?.durationHandler = { [weak self] current, duration in
+            guard duration > 0 else { return }
                 self?.slider.value = current / duration
+            self?.currentTimeLabel.text = self?.formatTime(current)
+            self?.durationLabel.text = self?.formatTime(duration)
         }
+    }
+    
+    private func setupAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set audio session: \(error)")
+        }
+    }
+
+    
+    private func formatTime(_ time: Float) -> String {
+        let totalSeconds = Int(time)
+        let minutes = totalSeconds / 60
+        let seconds = totalSeconds % 60
+        return String(format: "%02d:%02d", minutes, seconds)
     }
 
     @objc private func videoTapped() {
         if controlsContainerView.alpha == 0 {
             showControls()
         } else {
-            resetControlsHideTimer()
+            hideControls()
         }
     }
-
 
     private func showControls() {
         UIView.animate(withDuration: 0.3) {
@@ -96,13 +146,19 @@ final class CustomAVPlayerViewController: UIViewController {
 
         if player.timeControlStatus == .playing {
             viewModel?.pause()
-            playPauseButton.setTitle("Play", for: .normal)
+            let config = UIImage.SymbolConfiguration(pointSize: 28, weight: .medium)
+            let playImage = UIImage(systemName: "play.fill", withConfiguration: config)
+            playPauseButton.setImage(playImage, for: .normal)
+
         } else {
             viewModel?.play()
-            playPauseButton.setTitle("Pause", for: .normal)
-        }
+            let config = UIImage.SymbolConfiguration(pointSize: 28, weight: .medium)
+            let playImage = UIImage(systemName: "pause.fill", withConfiguration: config)
+            playPauseButton.setImage(playImage, for: .normal)
 
+        }
     }
+
     
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         guard let duration = viewModel?.player?.currentItem?.duration.seconds, duration.isFinite else { return }
@@ -111,10 +167,11 @@ final class CustomAVPlayerViewController: UIViewController {
     }
 
     @IBAction func pipButtonTapped(_ sender: Any) {
+        
         guard AVPictureInPictureController.isPictureInPictureSupported(),
               let playerLayer = playerLayer else { return }
 
-        let pipController = AVPictureInPictureController(playerLayer: playerLayer)
+        pipController = AVPictureInPictureController(playerLayer: playerLayer)
         pipController?.startPictureInPicture()
     }
     
