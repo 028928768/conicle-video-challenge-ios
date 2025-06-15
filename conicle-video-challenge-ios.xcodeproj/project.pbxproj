@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */; };
 		2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */; };
-		2BAEA4D42DFECD6800EF088A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D32DFECD6800EF088A /* ViewController.swift */; };
+		2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D32DFECD6800EF088A /* HomeViewController.swift */; };
 		2BAEA4D72DFECD6800EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D62DFECD6800EF088A /* Base */; };
 		2BAEA4D92DFECD6A00EF088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */; };
 		2BAEA4DC2DFECD6A00EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4DB2DFECD6A00EF088A /* Base */; };
 		2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */; };
 		2BAEA4F12DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */; };
 		2BAEA4F32DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */; };
+		2BAEA5072DFED21D00EF088A /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */; };
+		2BAEA50B2DFED31E00EF088A /* HomeOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50A2DFED31E00EF088A /* HomeOption.swift */; };
+		2BAEA50D2DFED33B00EF088A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50C2DFED33B00EF088A /* HomeViewModel.swift */; };
+		2BAEA50F2DFEDAE300EF088A /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA50E2DFEDAE300EF088A /* Media.swift */; };
+		2BAEA5112DFEDB0800EF088A /* AVPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */; };
+		2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */; };
+		2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,7 @@
 		2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "conicle-video-challenge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BAEA4D32DFECD6800EF088A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BAEA4D32DFECD6800EF088A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2BAEA4D62DFECD6800EF088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BAEA4DB2DFECD6A00EF088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITests.swift; sourceTree = "<group>"; };
 		2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
+		2BAEA50A2DFED31E00EF088A /* HomeOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOption.swift; sourceTree = "<group>"; };
+		2BAEA50C2DFED33B00EF088A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2BAEA50E2DFEDAE300EF088A /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewModel.swift; sourceTree = "<group>"; };
+		2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewController.swift; sourceTree = "<group>"; };
+		2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +113,10 @@
 		2BAEA4CE2DFECD6800EF088A /* conicle-video-challenge-ios */ = {
 			isa = PBXGroup;
 			children = (
-				2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */,
-				2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */,
-				2BAEA4D32DFECD6800EF088A /* ViewController.swift */,
-				2BAEA4D52DFECD6800EF088A /* Main.storyboard */,
-				2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */,
-				2BAEA4DA2DFECD6A00EF088A /* LaunchScreen.storyboard */,
+				2BAEA4FF2DFECF7B00EF088A /* App */,
+				2BAEA5002DFECF8500EF088A /* Features */,
+				2BAEA5012DFECF9000EF088A /* Resources */,
+				2BAEA5022DFECF9A00EF088A /* Utilities */,
 				2BAEA4DD2DFECD6A00EF088A /* Info.plist */,
 			);
 			path = "conicle-video-challenge-ios";
@@ -125,6 +137,87 @@
 				2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */,
 			);
 			path = "conicle-video-challenge-iosUITests";
+			sourceTree = "<group>";
+		};
+		2BAEA4FF2DFECF7B00EF088A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */,
+				2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */,
+				2BAEA4DA2DFECD6A00EF088A /* LaunchScreen.storyboard */,
+				2BAEA4D52DFECD6800EF088A /* Main.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BAEA5002DFECF8500EF088A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA5052DFED12F00EF088A /* Home */,
+				2BAEA5032DFECFE500EF088A /* AVPlayer */,
+				2BAEA5042DFECFED00EF088A /* YouTubePlayer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		2BAEA5012DFECF9000EF088A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2BAEA5022DFECF9A00EF088A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2BAEA5032DFECFE500EF088A /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA5152DFEDE7700EF088A /* VideoPlaylist */,
+				2BAEA5192DFEE40000EF088A /* VideoPlayer */,
+			);
+			path = AVPlayer;
+			sourceTree = "<group>";
+		};
+		2BAEA5042DFECFED00EF088A /* YouTubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = YouTubePlayer;
+			sourceTree = "<group>";
+		};
+		2BAEA5052DFED12F00EF088A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA4D32DFECD6800EF088A /* HomeViewController.swift */,
+				2BAEA50A2DFED31E00EF088A /* HomeOption.swift */,
+				2BAEA50C2DFED33B00EF088A /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2BAEA5152DFEDE7700EF088A /* VideoPlaylist */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */,
+				2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */,
+				2BAEA50E2DFEDAE300EF088A /* Media.swift */,
+			);
+			path = VideoPlaylist;
+			sourceTree = "<group>";
+		};
+		2BAEA5192DFEE40000EF088A /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA5062DFED21D00EF088A /* AVPlayerViewController.swift */,
+				2BAEA5102DFEDB0800EF088A /* AVPlayerViewModel.swift */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +351,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAEA4D42DFECD6800EF088A /* ViewController.swift in Sources */,
+				2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */,
 				2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */,
+				2BAEA50D2DFED33B00EF088A /* HomeViewModel.swift in Sources */,
+				2BAEA5112DFEDB0800EF088A /* AVPlayerViewModel.swift in Sources */,
+				2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */,
+				2BAEA50B2DFED31E00EF088A /* HomeOption.swift in Sources */,
+				2BAEA5072DFED21D00EF088A /* AVPlayerViewController.swift in Sources */,
+				2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */,
+				2BAEA50F2DFEDAE300EF088A /* Media.swift in Sources */,
 				2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
