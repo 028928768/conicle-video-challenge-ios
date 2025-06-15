@@ -26,7 +26,6 @@ final class CustomAVPlayerViewController: UIViewController {
     
     private var controlsHideTimer: Timer?
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -53,24 +52,20 @@ final class CustomAVPlayerViewController: UIViewController {
         currentTimeLabel.text = "00:00"
         durationLabel.text = "--:--"
         slider.value = 0
-        pipButton.setImage(UIImage(systemName: "pip.enter"), for: .normal)
-        pipButton.tintColor = .white
         
         let configPip = UIImage.SymbolConfiguration(pointSize: 24, weight: .regular)
         let pipImage = UIImage(systemName: "pip.enter", withConfiguration: configPip)
         pipButton.setImage(pipImage, for: .normal)
         pipButton.setTitle("", for: .normal)
+        pipButton.tintColor = .white
 
         
         let configPlay = UIImage.SymbolConfiguration(pointSize: 28, weight: .medium)
-        let playImage = UIImage(systemName: "play.fill", withConfiguration: configPlay)
+        let playImage = UIImage(systemName: "pause.fill", withConfiguration: configPlay)
         playPauseButton.setImage(playImage, for: .normal)
         playPauseButton.setTitle("", for: .normal)
         playPauseButton.imageView?.contentMode = .scaleAspectFit
         playPauseButton.tintColor = .white
-
-
-
     }
     
     private func setupPlayer() {
@@ -81,6 +76,11 @@ final class CustomAVPlayerViewController: UIViewController {
         layer.videoGravity = .resizeAspect
         videoContainerView.layer.addSublayer(layer)
         playerLayer = layer
+        
+        if AVPictureInPictureController.isPictureInPictureSupported() {
+            pipController = AVPictureInPictureController(playerLayer: layer)
+            pipController?.delegate = self
+        }
 
         viewModel?.play()
     }
@@ -167,12 +167,28 @@ final class CustomAVPlayerViewController: UIViewController {
     }
 
     @IBAction func pipButtonTapped(_ sender: Any) {
-        
-        guard AVPictureInPictureController.isPictureInPictureSupported(),
-              let playerLayer = playerLayer else { return }
-
-        pipController = AVPictureInPictureController(playerLayer: playerLayer)
-        pipController?.startPictureInPicture()
+        print("PiP started clicked")
+        guard let pipController = pipController else { return }
+        print("PiP started clicked guard")
+        if pipController.isPictureInPictureActive {
+            pipController.stopPictureInPicture()
+        } else {
+            pipController.startPictureInPicture()
+        }
     }
     
+}
+
+extension CustomAVPlayerViewController: AVPictureInPictureControllerDelegate {
+    func pictureInPictureControllerDidStartPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
+        print("PiP started")
+    }
+
+    func pictureInPictureControllerDidStopPictureInPicture(_ pictureInPictureController: AVPictureInPictureController) {
+        print("PiP stopped")
+    }
+
+    func pictureInPictureController(_ pictureInPictureController: AVPictureInPictureController, failedToStartPictureInPictureWithError error: Error) {
+        print("PiP failed: \(error.localizedDescription)")
+    }
 }
