@@ -58,13 +58,17 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         let selectedOption = viewModel.option(at: indexPath.row)
         
         switch selectedOption {
-        case .avPlayer:
+        case .avPlayer, .customAVPlayer:
+            guard let playerType = selectedOption.playerType else { return }
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let vc = storyboard.instantiateViewController(withIdentifier: "VideoPlaylistViewController") as? VideoPlaylistViewController {
+                vc.playerType = playerType
                 navigationController?.pushViewController(vc, animated: true)
             }
+            
         case .youtubePlayer:
             print("Go to YouTube Player")
+
         }
 
     }

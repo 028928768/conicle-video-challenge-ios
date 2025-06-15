@@ -11,6 +11,7 @@ import AVKit
 final class VideoPlaylistViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private let viewModel = VideoPlaylistViewModel()
+    var playerType: PlayerType = .systemAVPlayer 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,10 +42,22 @@ extension VideoPlaylistViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let media = viewModel.playlist[indexPath.row]
-        let viewModel = VideoPlayerViewModel(media: media)
-        let playerVC = VideoPlayerViewController()
-        playerVC.viewModel = viewModel
-        navigationController?.pushViewController(playerVC, animated: true)
+        let selectedMedia = viewModel.playlist[indexPath.row]
+        
+        switch playerType {
+        case .systemAVPlayer:
+            let playerVC = VideoPlayerViewController()
+            let viewModel = VideoPlayerViewModel(media: selectedMedia)
+            playerVC.viewModel = viewModel
+            navigationController?.pushViewController(playerVC, animated: true)
+        case .customAVPlayer:
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let playerVC = storyboard.instantiateViewController(withIdentifier: "CustomAVPlayerViewController") as! CustomAVPlayerViewController
+            let viewModel = CustomAVPlayerViewModel(media: selectedMedia)
+            playerVC.viewModel = viewModel
+            navigationController?.pushViewController(playerVC, animated: true)
+
+        }
+        
     }
 }

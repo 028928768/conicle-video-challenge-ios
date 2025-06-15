@@ -23,6 +23,8 @@
 		2BAEA5112DFEDB0800EF088A /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */; };
 		2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */; };
 		2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */; };
+		2BAEA51C2DFEEF3500EF088A /* CustomAVPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA51B2DFEEF3500EF088A /* CustomAVPlayerViewModel.swift */; };
+		2BAEA5222DFF157900EF088A /* CustomAVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5212DFF157900EF088A /* CustomAVPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModel.swift; sourceTree = "<group>"; };
 		2BAEA5122DFEDC0E00EF088A /* VideoPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewController.swift; sourceTree = "<group>"; };
 		2BAEA5172DFEDE9800EF088A /* VideoPlaylistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewModel.swift; sourceTree = "<group>"; };
+		2BAEA51B2DFEEF3500EF088A /* CustomAVPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayerViewModel.swift; sourceTree = "<group>"; };
+		2BAEA5212DFF157900EF088A /* CustomAVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,7 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				2BAEA5152DFEDE7700EF088A /* VideoPlaylist */,
-				2BAEA5192DFEE40000EF088A /* VideoPlayer */,
+				2BAEA5192DFEE40000EF088A /* VideoPlayerNative */,
+				2BAEA51A2DFEEE4000EF088A /* CustomVideoPlayer */,
 			);
 			path = AVPlayer;
 			sourceTree = "<group>";
@@ -211,13 +216,22 @@
 			path = VideoPlaylist;
 			sourceTree = "<group>";
 		};
-		2BAEA5192DFEE40000EF088A /* VideoPlayer */ = {
+		2BAEA5192DFEE40000EF088A /* VideoPlayerNative */ = {
 			isa = PBXGroup;
 			children = (
 				2BAEA5062DFED21D00EF088A /* VideoPlayerViewController.swift */,
 				2BAEA5102DFEDB0800EF088A /* VideoPlayerViewModel.swift */,
 			);
-			path = VideoPlayer;
+			path = VideoPlayerNative;
+			sourceTree = "<group>";
+		};
+		2BAEA51A2DFEEE4000EF088A /* CustomVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				2BAEA5212DFF157900EF088A /* CustomAVPlayerViewController.swift */,
+				2BAEA51B2DFEEF3500EF088A /* CustomAVPlayerViewModel.swift */,
+			);
+			path = CustomVideoPlayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +368,8 @@
 				2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */,
 				2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */,
 				2BAEA50D2DFED33B00EF088A /* HomeViewModel.swift in Sources */,
+				2BAEA51C2DFEEF3500EF088A /* CustomAVPlayerViewModel.swift in Sources */,
+				2BAEA5222DFF157900EF088A /* CustomAVPlayerViewController.swift in Sources */,
 				2BAEA5112DFEDB0800EF088A /* VideoPlayerViewModel.swift in Sources */,
 				2BAEA5132DFEDC0E00EF088A /* VideoPlaylistViewController.swift in Sources */,
 				2BAEA50B2DFED31E00EF088A /* HomeOption.swift in Sources */,
