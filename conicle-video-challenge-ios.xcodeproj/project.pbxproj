@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B6B78302E00196900D8D68C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2B6B782F2E00196900D8D68C /* YouTubeiOSPlayerHelper */; };
+		2B6B78322E0019EF00D8D68C /* YouTubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78312E0019EF00D8D68C /* YouTubePlayerViewController.swift */; };
 		2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */; };
 		2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */; };
 		2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D32DFECD6800EF088A /* HomeViewController.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B6B78312E0019EF00D8D68C /* YouTubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerViewController.swift; sourceTree = "<group>"; };
 		2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "conicle-video-challenge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B6B78302E00196900D8D68C /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +196,7 @@
 		2BAEA5042DFECFED00EF088A /* YouTubePlayer */ = {
 			isa = PBXGroup;
 			children = (
+				2B6B78312E0019EF00D8D68C /* YouTubePlayerViewController.swift */,
 			);
 			path = YouTubePlayer;
 			sourceTree = "<group>";
@@ -250,6 +255,9 @@
 			dependencies = (
 			);
 			name = "conicle-video-challenge-ios";
+			packageProductDependencies = (
+				2B6B782F2E00196900D8D68C /* YouTubeiOSPlayerHelper */,
+			);
 			productName = "conicle-video-challenge-ios";
 			productReference = 2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -322,6 +330,9 @@
 				Base,
 			);
 			mainGroup = 2BAEA4C32DFECD6800EF088A;
+			packageReferences = (
+				2B6B782E2E00196900D8D68C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
+			);
 			productRefGroup = 2BAEA4CD2DFECD6800EF088A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -377,6 +388,7 @@
 				2BAEA5182DFEDE9800EF088A /* VideoPlaylistViewModel.swift in Sources */,
 				2BAEA50F2DFEDAE300EF088A /* Media.swift in Sources */,
 				2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */,
+				2B6B78322E0019EF00D8D68C /* YouTubePlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,6 +735,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B6B782E2E00196900D8D68C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B6B782F2E00196900D8D68C /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B6B782E2E00196900D8D68C /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2BAEA4C42DFECD6800EF088A /* Project object */;
 }

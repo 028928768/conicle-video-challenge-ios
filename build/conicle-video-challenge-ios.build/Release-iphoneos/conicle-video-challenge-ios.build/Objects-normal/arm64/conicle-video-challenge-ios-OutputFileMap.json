@@ -1,0 +1,75 @@
+{
+  "" : {
+    "const-values" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master.swiftconstvalues",
+    "dependencies" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master.d",
+    "diagnostics" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master.dia",
+    "emit-module-dependencies" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master-emit-module.dia",
+    "swift-dependencies" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/conicle-video-challenge-ios-master.swiftdeps"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/App/AppDelegate.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/App/SceneDelegate.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/SceneDelegate.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/CustomVideoPlayer/CustomAVPlayerViewController.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewController.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewController.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewController.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/CustomVideoPlayer/CustomAVPlayerViewModel.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewModel.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewModel.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/CustomAVPlayerViewModel.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlayerNative/VideoPlayerViewController.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewController.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewController.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewController.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlayerNative/VideoPlayerViewModel.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewModel.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewModel.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlayerViewModel.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/Media.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/Media.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/Media.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/Media.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/VideoPlaylistViewController.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewController.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewController.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewController.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/VideoPlaylistViewModel.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewModel.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewModel.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/VideoPlaylistViewModel.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeOption.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeOption.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeOption.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeOption.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeViewController.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewController.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewController.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewController.o"
+  },
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeViewModel.swift" : {
+    "index-unit-output-path" : "/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewModel.o",
+    "llvm-bc" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewModel.bc",
+    "object" : "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/Objects-normal/arm64/HomeViewModel.o"
+  }
+}

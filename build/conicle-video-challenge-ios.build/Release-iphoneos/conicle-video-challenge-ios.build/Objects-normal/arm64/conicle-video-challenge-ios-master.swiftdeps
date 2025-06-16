@@ -1,0 +1,27 @@
+version: "Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)"
+options: "87c0605dea0c9325088e19421bde51329b71c314dad1113c19c363c033a46874"
+build_start_time: [1750064987, 957321000]
+build_end_time: [1750064996, 822228000]
+inputs:
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/build/conicle-video-challenge-ios.build/Release-iphoneos/conicle-video-challenge-ios.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : [1750064987, 35557099]
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/App/AppDelegate.swift": [1749980648, 914178641]
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/App/SceneDelegate.swift": [1749980648, 919188420]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/CustomVideoPlayer/CustomAVPlayerViewController.swift"
+  : [1750009291, 202174897]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/CustomVideoPlayer/CustomAVPlayerViewModel.swift"
+  : [1749995572, 264487616]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlayerNative/VideoPlayerViewController.swift"
+  : [1749988502, 759628782]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlayerNative/VideoPlayerViewModel.swift"
+  : [1749988502, 783704110]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/Media.swift"
+  : [1749985362, 86291531]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/VideoPlaylistViewController.swift"
+  : [1750000127, 384949539]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/AVPlayer/VideoPlaylist/VideoPlaylistViewModel.swift"
+  : [1749986052, 715536552]
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeOption.swift": [1749995572, 301151669]
+  ? "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeViewController.swift"
+  : [1749995572, 309649161]
+  "/Users/simonsiwell/Desktop/Project/conicle-video-challenge-ios/conicle-video-challenge-ios/Features/Home/HomeViewModel.swift": [1749983387, 116365199]

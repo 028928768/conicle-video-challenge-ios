@@ -116,13 +116,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="8VR-20-2aC">
-                                                <rect key="frame" x="56" y="0.0" width="261.66666666666669" height="45"/>
+                                                <rect key="frame" x="56" y="0.0" width="269.66666666666669" height="45"/>
                                                 <connections>
                                                     <action selector="sliderValueChanged:" destination="NGF-k2-Nwy" eventType="valueChanged" id="peU-bm-bHy"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEq-8Z-Rws">
-                                                <rect key="frame" x="323.66666666666669" y="0.0" width="37.333333333333314" height="44"/>
+                                                <rect key="frame" x="331.66666666666669" y="0.0" width="29.333333333333314" height="44"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -172,6 +172,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEr-4E-7lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2805" y="-35"/>
+        </scene>
+        <!--You Tube Player View Controller-->
+        <scene sceneID="ZnJ-eH-SbE">
+            <objects>
+                <viewController storyboardIdentifier="YouTubePlayerViewController" id="QDk-6D-vVO" customClass="YouTubePlayerViewController" customModule="conicle_video_challenge_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zf-Uz-URi">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ObO-65-j1Q" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="evF-Id-byg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ObO-65-j1Q" firstAttribute="leading" secondItem="evF-Id-byg" secondAttribute="leading" id="3yC-2Y-nuG"/>
+                            <constraint firstItem="evF-Id-byg" firstAttribute="bottom" secondItem="ObO-65-j1Q" secondAttribute="bottom" id="RhX-km-mg9"/>
+                            <constraint firstItem="ObO-65-j1Q" firstAttribute="top" secondItem="evF-Id-byg" secondAttribute="top" id="Xfz-t7-HsL"/>
+                            <constraint firstItem="evF-Id-byg" firstAttribute="trailing" secondItem="ObO-65-j1Q" secondAttribute="trailing" id="gb4-k6-50o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="ObO-65-j1Q" id="oc2-9U-efL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Qb-Ju-Eo4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3682" y="-35"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kxl-LQ-r8k">

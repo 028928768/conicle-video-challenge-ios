@@ -1,0 +1,2 @@
+Target dependency graph (1 target)
+Target 'conicle-video-challenge-ios' in project 'conicle-video-challenge-ios' (no dependencies)

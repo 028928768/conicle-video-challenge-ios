@@ -67,7 +67,11 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             }
             
         case .youtubePlayer:
-            print("Go to YouTube Player")
+            let youtubeVC = YouTubePlayerViewController()
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let vc = storyboard.instantiateViewController(withIdentifier: "YouTubePlayerViewController") as? YouTubePlayerViewController {
+                navigationController?.pushViewController(vc, animated: true)
+            }
 
         }
 
