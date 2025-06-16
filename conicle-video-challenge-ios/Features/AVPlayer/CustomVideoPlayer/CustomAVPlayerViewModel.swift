@@ -21,6 +21,7 @@ final class CustomAVPlayerViewModel {
             let player = AVPlayer(url: url)
             self.player = player
             setupTimeObserver(for: player)
+            setupAudioSession() 
         }
     }
     
@@ -56,4 +57,22 @@ final class CustomAVPlayerViewModel {
             self.durationHandler?(current, total)
         }
     }
+    
+    private func setupAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set audio session: \(error)")
+        }
+    }
+
+    
+    func formatTime(_ time: Float) -> String {
+        let totalSeconds = Int(time)
+        let minutes = totalSeconds / 60
+        let seconds = totalSeconds % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+
 }

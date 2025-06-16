@@ -30,7 +30,6 @@ final class CustomAVPlayerViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         setupPlayer()
-        setupAudioSession()
         setupBindings()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(videoTapped))
@@ -89,27 +88,11 @@ final class CustomAVPlayerViewController: UIViewController {
         viewModel?.durationHandler = { [weak self] current, duration in
             guard duration > 0 else { return }
                 self?.slider.value = current / duration
-            self?.currentTimeLabel.text = self?.formatTime(current)
-            self?.durationLabel.text = self?.formatTime(duration)
+            self?.currentTimeLabel.text = self?.viewModel?.formatTime(current)
+            self?.durationLabel.text = self?.viewModel?.formatTime(duration)
         }
     }
     
-    private func setupAudioSession() {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print("Failed to set audio session: \(error)")
-        }
-    }
-
-    
-    private func formatTime(_ time: Float) -> String {
-        let totalSeconds = Int(time)
-        let minutes = totalSeconds / 60
-        let seconds = totalSeconds % 60
-        return String(format: "%02d:%02d", minutes, seconds)
-    }
 
     @objc private func videoTapped() {
         if controlsContainerView.alpha == 0 {
@@ -159,7 +142,6 @@ final class CustomAVPlayerViewController: UIViewController {
         }
     }
 
-    
     @IBAction func sliderValueChanged(_ sender: UISlider) {
         guard let duration = viewModel?.player?.currentItem?.duration.seconds, duration.isFinite else { return }
         let newTime = Float(duration) * sender.value
