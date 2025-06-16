@@ -56,5 +56,4 @@ final class CustomAVPlayerViewModel {
             self.durationHandler?(current, total)
         }
     }
-    
 }

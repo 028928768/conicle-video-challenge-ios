@@ -16,6 +16,7 @@ class VideoPlayerViewModel {
     init(media: Media) {
         self.media = media
         configurePlayer()
+        setupAudioSession()
     }
     
     private func configurePlayer() {
@@ -26,6 +27,15 @@ class VideoPlayerViewModel {
         
         let playerItem = AVPlayerItem(url: url)
         self.player = AVPlayer(playerItem: playerItem)
+    }
+    
+    private func setupAudioSession() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .moviePlayback, options: [])
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("Failed to set AVAudioSession: \(error)")
+        }
     }
     
     func play() {

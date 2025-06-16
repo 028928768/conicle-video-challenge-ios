@@ -124,7 +124,6 @@
 				2BAEA4FF2DFECF7B00EF088A /* App */,
 				2BAEA5002DFECF8500EF088A /* Features */,
 				2BAEA5012DFECF9000EF088A /* Resources */,
-				2BAEA5022DFECF9A00EF088A /* Utilities */,
 				2BAEA4DD2DFECD6A00EF088A /* Info.plist */,
 			);
 			path = "conicle-video-challenge-ios";
@@ -174,13 +173,6 @@
 				2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		2BAEA5022DFECF9A00EF088A /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		2BAEA5032DFECFE500EF088A /* AVPlayer */ = {

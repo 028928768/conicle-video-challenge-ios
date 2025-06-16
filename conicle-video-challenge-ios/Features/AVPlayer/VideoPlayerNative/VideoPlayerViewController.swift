@@ -25,11 +25,11 @@ final class VideoPlayerViewController: AVPlayerViewController {
         
         self.player = player
         self.showsPlaybackControls = true
-        viewModel?.play()
     }
     
     private func setupPiP() {
         self.allowsPictureInPicturePlayback = true
         self.canStartPictureInPictureAutomaticallyFromInline = true
+        viewModel?.play()
     }
 }

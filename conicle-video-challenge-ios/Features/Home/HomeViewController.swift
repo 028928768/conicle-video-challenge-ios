@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     private let viewModel = HomeViewModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -23,13 +23,13 @@ class HomeViewController: UIViewController {
         title = "Video Players"
         view.backgroundColor = .systemBackground
     }
-
+    
     
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
     }
-
+    
 }
 
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
@@ -37,14 +37,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.options.count
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") ??
-                   UITableViewCell(style: .default, reuseIdentifier: "cell")
+        UITableViewCell(style: .default, reuseIdentifier: "cell")
         
         cell.textLabel?.text = viewModel.title(for: indexPath.row)
         return cell
@@ -67,14 +67,13 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
             }
             
         case .youtubePlayer:
-            let youtubeVC = YouTubePlayerViewController()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            if let vc = storyboard.instantiateViewController(withIdentifier: "YouTubePlayerViewController") as? YouTubePlayerViewController {
-                navigationController?.pushViewController(vc, animated: true)
+            if let youtubeVC = storyboard.instantiateViewController(withIdentifier: "YouTubePlayerViewController") as? YouTubePlayerViewController {
+                navigationController?.pushViewController(youtubeVC, animated: true)
             }
-
+            
         }
-
+        
     }
 }
 

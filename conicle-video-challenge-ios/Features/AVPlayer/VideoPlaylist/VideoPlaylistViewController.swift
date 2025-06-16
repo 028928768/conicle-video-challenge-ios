@@ -15,8 +15,11 @@ final class VideoPlaylistViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Playlist"
         setupTableView()
+    }
+    
+    private func setupUI() {
+        title = "Playlist"
     }
     
     private func setupTableView() {
