@@ -15,7 +15,8 @@ final class HomeViewModel {
         return options[index].title
     }
     
-    func option(at index: Int) -> HomeOption {
+    func option(at index: Int) -> HomeOption? {
+        guard options.indices.contains(index) else { return nil }
         return options[index]
     }
     

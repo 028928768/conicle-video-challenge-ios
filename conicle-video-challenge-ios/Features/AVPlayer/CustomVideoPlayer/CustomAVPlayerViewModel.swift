@@ -15,14 +15,17 @@ final class CustomAVPlayerViewModel {
     
     var durationHandler: ((Float, Float) -> Void )?
     
-    init(media: Media) {
-        self.media = media
-        if let url = URL(string: media.url) {
-            let player = AVPlayer(url: url)
-            self.player = player
-            setupTimeObserver(for: player)
-            setupAudioSession() 
+    init?(media: Media) {
+        guard let url = CustomAVPlayerViewModel.validatedPlayableURL(from: media.url) else {
+            print("Invalid media URL: \(media.url)")
+            return nil
         }
+
+        self.media = media
+        let player = AVPlayer(url: url)
+        self.player = player
+        setupTimeObserver(for: player)
+        setupAudioSession()
     }
     
     deinit {
@@ -73,6 +76,15 @@ final class CustomAVPlayerViewModel {
         let minutes = totalSeconds / 60
         let seconds = totalSeconds % 60
         return String(format: "%02d:%02d", minutes, seconds)
+    }
+    
+    // MARK: - Validation
+    private static func validatedPlayableURL(from string: String) -> URL? {
+        guard let url = URL(string: string),
+              ["http", "https"].contains(url.scheme?.lowercased()) else {
+            return nil
+        }
+        return url
     }
 
 }

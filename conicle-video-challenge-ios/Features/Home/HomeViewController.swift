@@ -55,7 +55,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selectedOption = viewModel.option(at: indexPath.row)
+        guard let selectedOption = viewModel.option(at: indexPath.row) else { return }
         
         switch selectedOption {
         case .avPlayer, .customAVPlayer:

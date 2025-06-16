@@ -20,7 +20,8 @@ class VideoPlayerViewModel {
     }
     
     private func configurePlayer() {
-        guard let url = URL(string: media.url) else {
+        guard let url = URL(string: media.url),
+        ["http", "https"].contains(url.scheme?.lowercased()) else {
             print ("Invalid URL string: \(media.url)")
             return
         }

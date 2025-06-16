@@ -9,13 +9,16 @@
 /* Begin PBXBuildFile section */
 		2B6B78302E00196900D8D68C /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = 2B6B782F2E00196900D8D68C /* YouTubeiOSPlayerHelper */; };
 		2B6B78322E0019EF00D8D68C /* YouTubePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78312E0019EF00D8D68C /* YouTubePlayerViewController.swift */; };
+		2B6B78342E00276F00D8D68C /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78332E00276F00D8D68C /* HomeViewModelTests.swift */; };
+		2B6B78362E002AEC00D8D68C /* VideoPlaylistViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78352E002AEC00D8D68C /* VideoPlaylistViewModelTests.swift */; };
+		2B6B78382E002BB900D8D68C /* VideoPlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78372E002BB900D8D68C /* VideoPlayerViewModelTests.swift */; };
+		2B6B783A2E002CA600D8D68C /* CustomAVPlayerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6B78392E002CA600D8D68C /* CustomAVPlayerViewModelTests.swift */; };
 		2BAEA4D02DFECD6800EF088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */; };
 		2BAEA4D22DFECD6800EF088A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */; };
 		2BAEA4D42DFECD6800EF088A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D32DFECD6800EF088A /* HomeViewController.swift */; };
 		2BAEA4D72DFECD6800EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D62DFECD6800EF088A /* Base */; };
 		2BAEA4D92DFECD6A00EF088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4D82DFECD6A00EF088A /* Assets.xcassets */; };
 		2BAEA4DC2DFECD6A00EF088A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 2BAEA4DB2DFECD6A00EF088A /* Base */; };
-		2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */; };
 		2BAEA4F12DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */; };
 		2BAEA4F32DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */; };
 		2BAEA5072DFED21D00EF088A /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAEA5062DFED21D00EF088A /* VideoPlayerViewController.swift */; };
@@ -48,6 +51,10 @@
 
 /* Begin PBXFileReference section */
 		2B6B78312E0019EF00D8D68C /* YouTubePlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubePlayerViewController.swift; sourceTree = "<group>"; };
+		2B6B78332E00276F00D8D68C /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		2B6B78352E002AEC00D8D68C /* VideoPlaylistViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlaylistViewModelTests.swift; sourceTree = "<group>"; };
+		2B6B78372E002BB900D8D68C /* VideoPlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewModelTests.swift; sourceTree = "<group>"; };
+		2B6B78392E002CA600D8D68C /* CustomAVPlayerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAVPlayerViewModelTests.swift; sourceTree = "<group>"; };
 		2BAEA4CC2DFECD6800EF088A /* conicle-video-challenge-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "conicle-video-challenge-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4CF2DFECD6800EF088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BAEA4D12DFECD6800EF088A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +64,6 @@
 		2BAEA4DB2DFECD6A00EF088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BAEA4DD2DFECD6A00EF088A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BAEA4E22DFECD6A00EF088A /* conicle-video-challenge-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosTests.swift; sourceTree = "<group>"; };
 		2BAEA4EC2DFECD6A00EF088A /* conicle-video-challenge-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "conicle-video-challenge-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BAEA4F02DFECD6A00EF088A /* conicle_video_challenge_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITests.swift; sourceTree = "<group>"; };
 		2BAEA4F22DFECD6A00EF088A /* conicle_video_challenge_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = conicle_video_challenge_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -132,7 +138,10 @@
 		2BAEA4E52DFECD6A00EF088A /* conicle-video-challenge-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				2BAEA4E62DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift */,
+				2B6B78332E00276F00D8D68C /* HomeViewModelTests.swift */,
+				2B6B78352E002AEC00D8D68C /* VideoPlaylistViewModelTests.swift */,
+				2B6B78372E002BB900D8D68C /* VideoPlayerViewModelTests.swift */,
+				2B6B78392E002CA600D8D68C /* CustomAVPlayerViewModelTests.swift */,
 			);
 			path = "conicle-video-challenge-iosTests";
 			sourceTree = "<group>";
@@ -388,7 +397,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BAEA4E72DFECD6A00EF088A /* conicle_video_challenge_iosTests.swift in Sources */,
+				2B6B78362E002AEC00D8D68C /* VideoPlaylistViewModelTests.swift in Sources */,
+				2B6B78382E002BB900D8D68C /* VideoPlayerViewModelTests.swift in Sources */,
+				2B6B78342E00276F00D8D68C /* HomeViewModelTests.swift in Sources */,
+				2B6B783A2E002CA600D8D68C /* CustomAVPlayerViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,6 +577,8 @@
 				DEVELOPMENT_TEAM = 8A8VNC6KC9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "conicle-video-challenge-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Conicle;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -593,6 +607,8 @@
 				DEVELOPMENT_TEAM = 8A8VNC6KC9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "conicle-video-challenge-ios/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Conicle;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
